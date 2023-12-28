@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Comfortaa', sans-serif;
+    font-weight: normal;
     background-color: #ffffff; /* Add a default background color for the entire page */
     background-image: url('assets/background.jpg');
     background-size: cover;
@@ -13,17 +14,21 @@ body {
 
 header {
     background-color: transparent;
-    padding: 20px;
+    padding: 20px; 
     color: #403d39; /* Updated text color */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
 }
-
+header .logo-container img {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    height: auto;
+}
 header .logo-container {
-    max-width: 80px; /* Adjust the size as needed */
-    margin-right: 2px;
+    max-width: 360px; /* Adjust the size as needed */
+    margin-right: 15px; /* Adjust the margin as needed */
+    flex-shrink: 0; 
 }
 
 nav a {
@@ -31,10 +36,11 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 0.5px;
 }
-
+nav a:hover {
+    color: #883F39;
+}
 .icon-container {
     display: none;
     cursor: pointer;
@@ -48,8 +54,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     background-color: rgba(255, 255, 255, 0.8); /* Add a background color to cover the background image */
 }
 section {
@@ -57,14 +63,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    color: #403d39; /* Updated text color */
+    color: #403d39;
+    font-weight: normal;
 }
 
 p {
@@ -77,15 +84,17 @@ p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
-    background-color: #F5EBE0;
+    padding: 50px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 40px 0;
 }
 
+
 .service-box {
     width: 30%;
+    background-color: #F3C1BC;
+    color: #403d39;
     padding: 20px;
     margin: 20px 0;
     background-image: url('assets/images/game.jpg');
@@ -97,13 +106,16 @@ p {
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
     color: #403d39; /* Updated text color */
+    font-weight: normal;
 }
-
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
 .contact {
-    background-color: #D6CCC2;
+    background-color: #F3C1BC;
     color: #403d39; /* Updated text color */
     padding: 50px;
     text-align: center;
@@ -132,27 +144,34 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+button:hover {
+
+background-color: #883F39;
+}
 /* Basic styling for the footer */
 footer {
-    background-color: #F5EBE0;
+    background-color: #ffffff;
     padding: 30px;
     text-align: center;
     color: #403d39;
+    font-weight: normal;
+    justify-content: space-between;
 }
 
 /* Style for each section in the footer */
-.contact,
+.contact2,
 .address-media,
 .newsletter {
     display: inline-block;
+    padding: 40px;
     margin-right: 20px;
     margin-bottom: 20px;
     vertical-align: top;
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
 }
 
 /* Style for headings in each section */
-.contact h4,
+.contact2 h4,
 .address-media h4,
 .newsletter h4 {
     color: #403d39; /* Updated text color */
@@ -179,6 +198,7 @@ footer {
 }
 
 .newsletter input {
+   width: 250px;
   padding: 8px;
   margin-bottom: 10px;
 }
@@ -187,7 +207,7 @@ footer {
 /* Responsive styles - adjust as needed */
 @media (max-width: 768px) {
   /* Stack sections on smaller screens */
-  .contact,
+  .contact2,
   .address-media,
   .newsletter {
     display: block;
