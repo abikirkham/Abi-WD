@@ -21,7 +21,7 @@ header {
     z-index: 1;
 }
 
-.logo-container {
+header .logo-container {
     max-width: 80px; /* Adjust the size as needed */
     margin-right: 2px;
 }
