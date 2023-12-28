@@ -144,7 +144,9 @@ footer {
 .contact,
 .address-media,
 .newsletter {
-  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top; /* Align sections to the top */
 }
 
 /* Style for headings in each section */
@@ -154,7 +156,7 @@ footer {
   color: #ffd700; /* Yellow color for headings */
 }
 
-/* Style for the links in the social media section */
+/* Style for the links in the address-media section */
 .address-media a {
   color: #fff;
   text-decoration: none;
@@ -186,21 +188,17 @@ footer {
 }
 
 /* Responsive styles - adjust as needed */
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
+@media (max-width: 768px) {
+  /* Stack sections on smaller screens */
   .contact,
   .address-media,
   .newsletter {
-    flex: 1;
-    margin-right: 20px;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
+
 
 @media (max-width: 768px) {
     nav {
