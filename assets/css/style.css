@@ -22,8 +22,8 @@ header {
 }
 
 .logo-container {
-    max-width: 15px; /* Set a maximum width for the logo */
-    margin-right: 2px; /* Adjust the margin as needed */
+    max-width: 80px; /* Adjust the size as needed */
+    margin-right: 2px;
 }
 
 nav a {
@@ -134,34 +134,38 @@ button {
 }
 /* Basic styling for the footer */
 footer {
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  color: #403d39;
+    background-color: #F5EBE0;
+    padding: 30px;
+    text-align: center;
+    color: #403d39;
 }
 
 /* Style for each section in the footer */
 .contact,
 .address-media,
 .newsletter {
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: top; /* Align sections to the top */
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    text-align: left; /* Align text to the left */
 }
 
 /* Style for headings in each section */
 .contact h4,
 .address-media h4,
 .newsletter h4 {
-  color: #403d39; /* Yellow color for headings */
+    color: #403d39; /* Updated text color */
 }
 
 /* Style for the links in the address-media section */
 .address-media a {
-  color: #403d39;
-  text-decoration: none;
-  margin-right: 10px;
+    color: #403d39;
+    text-decoration: none;
+    margin-right: 10px;
+    display: block; /* Make the links block-level for better spacing */
 }
+
 
 /* Style for the form in the newsletter section */
 .newsletter form {
