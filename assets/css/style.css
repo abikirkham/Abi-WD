@@ -153,6 +153,14 @@ button:hover {
 
 background-color: #883F39;
 }
+
+.contactbg {
+    background-color: #F3C1BC; /* Set the background color of the main section */
+ 
+    margin-bottom: 50px; /* Add some padding for better spacing */
+}
+
+
 /* Basic styling for the footer */
 footer {
     background-color: #ffffff;
