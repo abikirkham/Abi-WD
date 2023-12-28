@@ -21,45 +21,50 @@
         <div class="icon-container">&#9776;</div>
     </header>
     
+<main class="contactbg">
+<div class="container">
+    <form id="quoteForm">
+        <!-- Contact Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-<h1>Contact Us</h1>
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
 
-<form action="#" method="post" id="contactForm">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
 
-    <label for="phone">Your Contact Number:</label>
-    <input type="phone" id="phone" name="phone" required>
+        <!-- Project Details -->
+        <h3>Project Details</h3>
 
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required>
+        <label for="bidType">Type of Bid:</label>
+        <input type="text" id="bidType" name="bidType" required>
 
-    <label>Request a Service:</label>
-    <label><input type="checkbox" name="serviceRequest" value="webDevelopment"> Web Development</label>
-    <label><input type="checkbox" name="serviceRequest" value="design"> Design</label>
-    <label><input type="checkbox" name="serviceRequest" value="maintenance"> Maintenance</label>
+        <label for="projectScope">Project Scope:</label>
+        <textarea id="projectScope" name="projectScope" required></textarea>
 
-    <label for="contactMethod">Preferred Method of Contact:</label>
-    <select id="contactMethod" name="contactMethod">
-        <option value="email">Email</option>
-        <option value="phone">Phone</option>
-        <option value="both">Both</option>
-    </select>
+        <label for="bidDeadline">Bid Submission Deadline:</label>
+        <input type="text" id="bidDeadline" name="bidDeadline" required>
 
-    <label for="companyDescription">Description of Your Company:</label>
-    <textarea id="companyDescription" name="companyDescription" rows="4" required></textarea>
+        
+        <!-- Additional Information -->
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo"></textarea>
 
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+        <!-- Preferred Contact Method -->
+        <h3>Preferred Contact Method</h3>
+        <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+        <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+<br>
+        <!-- Submit Button -->
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
 
-    <button type="submit">Submit</button>
-</form>
-
-
-    <!-- Rest of your webpage content goes here -->
+</div>
+</main>    <!-- Rest of your webpage content goes here -->
     <footer>
         <div class="contact2">
           <h4>Contact Me Direct</h4>
