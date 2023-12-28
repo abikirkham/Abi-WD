@@ -127,6 +127,75 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+/* Basic styling for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for each section in the footer */
+.contact,
+.address-media,
+.newsletter {
+  margin-bottom: 20px;
+}
+
+/* Style for headings in each section */
+.contact h4,
+.address-media h4,
+.newsletter h4 {
+  color: #ffd700; /* Yellow color for headings */
+}
+
+/* Style for the links in the social media section */
+.address-media a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Style for the form in the newsletter section */
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter label {
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #ffd700;
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles - adjust as needed */
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .contact,
+  .address-media,
+  .newsletter {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
 
 @media (max-width: 768px) {
     nav {
