@@ -22,8 +22,8 @@ header {
 }
 
 .logo-container {
-    max-width: 150px; /* Set a maximum width for the logo */
-    margin-right: 20px; /* Adjust the margin as needed */
+    max-width: 15px; /* Set a maximum width for the logo */
+    margin-right: 2px; /* Adjust the margin as needed */
 }
 
 nav a {
