@@ -134,10 +134,10 @@ button {
 }
 /* Basic styling for the footer */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
+  color: #403d39;
 }
 
 /* Style for each section in the footer */
@@ -153,12 +153,12 @@ footer {
 .contact h4,
 .address-media h4,
 .newsletter h4 {
-  color: #ffd700; /* Yellow color for headings */
+  color: #403d39; /* Yellow color for headings */
 }
 
 /* Style for the links in the address-media section */
 .address-media a {
-  color: #fff;
+  color: #403d39;
   text-decoration: none;
   margin-right: 10px;
 }
@@ -179,13 +179,6 @@ footer {
   margin-bottom: 10px;
 }
 
-.newsletter button {
-  background-color: #ffd700;
-  color: #333;
-  padding: 8px 15px;
-  border: none;
-  cursor: pointer;
-}
 
 /* Responsive styles - adjust as needed */
 @media (max-width: 768px) {
