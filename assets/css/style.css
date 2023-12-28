@@ -21,6 +21,11 @@ header {
     z-index: 1;
 }
 
+.logo-container {
+    max-width: 150px; /* Set a maximum width for the logo */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
 nav a {
     color: #403d39; /* Updated text color */
     text-decoration: none;
