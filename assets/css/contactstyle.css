@@ -1,17 +1,13 @@
-
 body {
     margin: 0;
     font-family: 'Comfortaa', sans-serif;
     font-weight: normal;
+   margin-top: -25px;
     background-color: #ffffff; /* Add a default background color for the entire page */
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
     color: #403d39;
     text-align: center;
     line-height: 1.6;
 }
-
 
 header {
     background-color: transparent;
