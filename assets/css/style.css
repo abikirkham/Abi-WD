@@ -2,10 +2,8 @@ body {
     margin: 0;
     font-family: 'Comfortaa', sans-serif;
     font-weight: normal;
+   margin-top: -25px;
     background-color: #ffffff; /* Add a default background color for the entire page */
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
     color: #403d39;
     text-align: center;
     line-height: 1.6;
@@ -57,6 +55,30 @@ main {
     padding-top: 90px;
     padding-bottom: 90px;
     background-color: rgba(255, 255, 255, 0.8); /* Add a background color to cover the background image */
+}
+
+#myImage {
+    position: relative;
+    width: 100%;
+    top: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.25;
+  
+}
+.landing {
+    position: absolute;
+    z-index: 2;
+    max-width: 900px;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width as needed */
 }
 section {
     display: flex;
