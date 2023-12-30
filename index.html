@@ -28,42 +28,26 @@
         <p>Hello there! I'm Abi, a freelance full-stack developer ready to turn your digital dreams into reality. From sleek websites to dynamic web applications, I bring a holistic approach to web development.</p>
   <p>Explore my portfolio to see the diverse range of projects I've worked on. Let's embark on this coding journey together and transform your vision into a pixel-perfect reality!</p>
   <p>Happy coding,<br>Abi,<br>Freelance Full Stack Developer</p></main></div>
-  <section>
-    
-        <div class="services">
-            <div class="service-box">
-                <h2>Website Development</h2>
-                <img src="assets/images/webdev.jpg" alt="Service Image" class="service-image">
-                <p>I create fully functional websites from scratch, handling UI design and responsive development using technologies like HTML, CSS, and JavaScript or frameworks such as React, Python and C+.</p>
-                <a href="services.html"><button>Find Out More</button></a>
-            </div>
-    
-            <div class="service-box">
-              <h2>E-commerce Development</h2>
-              <img src="assets/images/ecommerce.jpg" alt="Service Image" class="service-image">
-              <p>Specialising in setting up online stores, I integrate payment gateways and implement e-commerce features such as catalogs, carts, and secure checkouts. I use known platforms or develop custom solutions based on the client's needs.</p>
-              <a href="services.html"><button>Find Out More</button></a>
+ 
+    <div id="gallery-container">
+      <h2>Services</h2>
+      <div id="rotator-container">
+          <div class="image-wrapper">
+              <img id="rotator-prev" src="" alt="Gallery Image">
+              <p id="image-text-prev"></p>
           </div>
-          <div class="service-box">
-            <h2>Maintenance and Updates</h2>
-            <img src="assets/images/updates.jpg" alt="Service Image" class="service-image">
-            <p>I provide ongoing support for websites, managing content updates, fixing bugs, and ensuring compatibility with the latest web standards. Regular maintenance enhances security, performance, and user experience.</p>
-            <a href="services.html"><button>Find Out More</button></a>
-        </div>
-        <div class="service-box">
-          <h2>Graphic design</h2>
-          <img src="assets/images/graphic.jpg" alt="Service Image" class="service-image">
-          <p>As a web developer, I offer a comprehensive service that seamlessly integrates cutting-edge web development with captivating graphic design to elevate your online presence and user experience.</p>
-           <a href="services.html"><button>Find Out More</button></a>
+          <div class="image-wrapper">
+              <img id="rotator" src="" alt="Gallery Image"> 
+              <p id="image-text"></p>
+         </div>
+          <div class="image-wrapper">
+              <img id="rotator-next" src="" alt="Gallery Image">
+              <p id="image-text-next"></p>
+          </div>
       </div>
-      <div class="service-box">
-        <h2>Tools + Resources</h2>
-        <img src="assets/images/tools.jpg" alt="Service Image" class="service-image">
-        <p>Specialising in setting up online stores, I integrate payment gateways and implement e-commerce features such as catalogs, carts, and secure checkouts. I use known platforms or develop custom solutions based on the client's needs.</p>
-        <a href="products.html"><button>Find Out More</button></a>
-    </div>
-        </div>
-    
+      <button id="prev-button">Previous</button>
+      <button id="next-button">Next</button>
+  </div>
     </section>
     <section class="contact">
         <h2>Contact Us</h2>
@@ -79,8 +63,8 @@
     
             <button type="submit">Submit</button>
         </form>
-    </section>
-    
+  
+   
     <!-- Rest of your webpage content goes here -->
     <footer>
   <div class="contact2">
@@ -106,6 +90,6 @@
     </form>
   </div>
 </footer>
-
+<script src="arrows.js"></script>
     </body>
     </html>
