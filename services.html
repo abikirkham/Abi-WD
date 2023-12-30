@@ -29,39 +29,35 @@
       <p>As the digital world unfolded before me, I emerged not just as a nurse but as AK, the web developer. My skills seamlessly blended medical precision with digital finesse, creating a unique identity in the heart of Manchester. The city, known for its industrial spirit, became the canvas for my creative aspirations. Venturing into entrepreneurship, I established "AK Web Solutions" – a reflection of my distinctive blend of medical expertise and coding prowess. My website, mirroring Manchester's dynamic energy, proudly showcased services that went beyond the ordinary.</p>
       
       <p>Clients resonated with my approach, and their testimonials echoed their satisfaction. One client praised, "AK doesn't just build websites; she crafts digital experiences that reflect the heart of Manchester. Her background in nursing brings a human touch to every project." Another testimonial exclaimed, "Choosing AK was a game-changer for our business. Her perspective as a nurse turned coder brought a refreshing approach to our project. Our website not only functions flawlessly but also resonates with the spirit of Manchester." The symphony of my success reverberated through the city, as businesses flourished under my guidance. The keyboard became my instrument, playing a melody that harmonized with the heartbeat of Manchester. In this digital landscape, I found my true calling – a web developer whose work not only transformed businesses but also enriched the vibrant tapestry of Manchester's online presence.</p>
-    </div>
-      <section>
+    </div></main>
     
-        <div class="services">
-            <div class="service-box">
-                <h2>Website Development</h2>
-                <img src="assets/images/webdev.jpg" alt="Service Image" class="service-image">
-                <p>I create fully functional websites from scratch, handling UI design and responsive development using technologies like HTML, CSS, and JavaScript or frameworks such as React, Python and C+.</p>
-                <a href="services.html"><button>Find Out More</button></a>
-            </div>
     
-            <div class="service-box">
-              <h2>E-commerce Development</h2>
-              <img src="assets/images/ecom.jpg" alt="Service Image" class="service-image">
-              <p>Specialising in setting up online stores, I integrate payment gateways and implement e-commerce features such as catalogs, carts, and secure checkouts. I use known platforms or develop custom solutions based on the client's needs.</p>
-              <a href="services.html"><button>Find Out More</button></a>
-          </div>
-          <div class="service-box">
-            <h2>Maintenance and Updates</h2>
-            <img src="assets/images/maintain.jpg" alt="Service Image" class="service-image">
-            <p>I provide ongoing support for websites, managing content updates, fixing bugs, and ensuring compatibility with the latest web standards. Regular maintenance enhances security, performance, and user experience.</p>
-            <a href="services.html"><button>Find Out More</button></a>
+        <div id="gallery-container">
+          <h2>Services</h2>
+          <div class="image-wrapper">
+            <h2 id="image-title-prev"></h2>
+            <img id="rotator-prev" src="" alt="Gallery Image">
+            <p id="image-text-prev"></p>
         </div>
-        <div class="service-box">
-          <h2>Graphic design</h2>
-          <img src="assets/images/maintain.jpg" alt="Service Image" class="service-image">
-          <p>As a web developer, I offer a comprehensive service that seamlessly integrates cutting-edge web development with captivating graphic design to elevate your online presence and user experience.</p>
-           <a href="services.html"><button>Find Out More</button></a>
+        
+        <div class="image-wrapper">
+          <h2 id="image-title"></h2>
+            <img id="rotator" src="" alt="Gallery Image"> 
+            <p id="image-text"></p>
+        </div>
+        
+        <div class="image-wrapper">
+          <h2 id="image-title-next"></h2>
+            <img id="rotator-next" src="" alt="Gallery Image">
+            <p id="image-text-next"></p>
+        </div>
+    
+     
       </div>
-        </div>
+         <button id="prev-button">Previous</button>
+          <button id="next-button">Next</button>
     
-    </section>
-   </main>
+    <br><br><br>
     
     <!-- Rest of your webpage content goes here -->
     <footer>
@@ -88,6 +84,6 @@
     </form>
   </div>
 </footer>
-
+<script src="arrows.js"></script>
     </body>
     </html>

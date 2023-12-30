@@ -173,6 +173,14 @@ h2 {
     color: #403d39; /* Updated text color */
     font-weight: normal;
 }
+h2 a {
+    text-decoration: none;
+    color: #403d39; /* Updated text color */
+    text-underline-offset: none;
+}
+h2 a:hover {
+    color: #883F39;
+}
 h3,
 h4,
 h5 {
