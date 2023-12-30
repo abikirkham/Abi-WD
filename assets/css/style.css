@@ -7,6 +7,7 @@ body {
     color: #403d39;
     text-align: center;
     line-height: 1.6;
+    letter-spacing: 1px;
 }
 
 
@@ -89,32 +90,28 @@ main {
     text-align: left;
 }
 
-
 #gallery-container {
     overflow: hidden;
 }
 
-#rotator-container {
-    display: flex;
-    justify-content: space-between; /* Add this line to space out the images */
-}
-
 .image-wrapper {
+    display: inline-block;
     background-color: #F3C1BC;
     color: #403d39;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    flex: 0 0 auto; /* Add this line to prevent images from growing */
     position: relative;
-    width: fit-content;
-    max-width: 400px;
+    width: 450px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
+
 
 #rotator-prev,
 #rotator,
 #rotator-next {
-    width: 300px; /* Use 100% width for responsiveness */
+    width: 250px; /* Use 100% width for responsiveness */
     height: auto;
     border-radius: 8px;
 }
@@ -123,25 +120,25 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 350px;
     background-color: #F3C1BC;
     color: #403d39;
     padding: 10px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    
 }
 
 #image-text-prev,
 #image-text,
-#image-text-next {
+#image-text-next,
+#image-title-prev,
+#image-title,
+#image-title-next {
     color: #403d39;
     padding: 7px;
     width: 100%;
-    text-align: left;
+    text-align: center;
+    font-size: medium;
 }
-
-
-
 
 #prev-button,
 #next-button {
