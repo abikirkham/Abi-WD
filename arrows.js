@@ -77,60 +77,45 @@
 
 
 // Add this section for testimonials
-var testimonialTitles = [
-    'Client 1',
-    'Client 2',
-    'Client 3',
-    'Client 4',
-    'Client 5',
-    'Client 6',
-    'Client 7',
-    'Client 8',
-    'Client 9',
-    'Client 10'
-];
+
 
 var testimonialTexts = [
-    '"Lorem ipsum dolor sit amet, consectetur adipiscing elit."',
-    'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    '"Lorem ipsum dolor sit amet, consectetur adipiscing elit." - Client 1',
+    '"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." - Client 2',
+    '"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." - Client 3',
+    '"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." - Client 4',
+    '"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." - Client 5',
+    '"Lorem ipsum dolor sit amet, consectetur adipiscing elit." - Client 6',
+    '"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." - Client 7',
+    '"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." - Client 8',
+    '"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." - Client 9',
+    '"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." - Client 10'
 ];
 
 var currentTestimonialIndex = 1;
 
-var changeTestimonial = function() {
-    var len = testimonialTitles.length;
+var changeTestimonial = function () {
+  var len = testimonialTexts.length;
 
-    var prevTestimonialIndex = (currentTestimonialIndex - 1 + len) % len;
-    var nextTestimonialIndex = (currentTestimonialIndex + 1) % len;
+  var prevTestimonialIndex = (currentTestimonialIndex - 1 + len) % len;
+  var nextTestimonialIndex = (currentTestimonialIndex + 1) % len;
 
-    document.getElementById('testimonial-prev').textContent = testimonialTitles[prevTestimonialIndex];
-    document.getElementById('testimonial').textContent = testimonialTitles[currentTestimonialIndex];
-    document.getElementById('testimonial-next').textContent = testimonialTitles[nextTestimonialIndex];
-
-    document.getElementById('testimonial-text-prev').textContent = testimonialTexts[prevTestimonialIndex];
-    document.getElementById('testimonial-text').textContent = testimonialTexts[currentTestimonialIndex];
-    document.getElementById('testimonial-text-next').textContent = testimonialTexts[nextTestimonialIndex];
+  document.getElementById('testimonial-text-prev').textContent = testimonialTexts[prevTestimonialIndex];
+  document.getElementById('testimonial-text').textContent = testimonialTexts[currentTestimonialIndex];
+  document.getElementById('testimonial-text-next').textContent = testimonialTexts[nextTestimonialIndex];
 };
 
 var prevTestimonialButton = document.getElementById('prev-testimonial-button');
 var nextTestimonialButton = document.getElementById('next-testimonial-button');
 
-prevTestimonialButton.addEventListener('click', function() {
-    currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialTitles.length) % testimonialTitles.length;
-    changeTestimonial();
+prevTestimonialButton.addEventListener('click', function () {
+  currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialTexts.length) % testimonialTexts.length;
+  changeTestimonial();
 });
 
-nextTestimonialButton.addEventListener('click', function() {
-    currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialTitles.length;
-    changeTestimonial();
+nextTestimonialButton.addEventListener('click', function () {
+  currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialTexts.length;
+  changeTestimonial();
 });
 
 // Initial testimonial display
