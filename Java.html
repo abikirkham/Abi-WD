@@ -21,18 +21,97 @@
         <div class="icon-container">&#9776;</div>
     </header>
     
-   <main>Coming soon...
+   <main>
+    <div class="cheatsheet">
+<h2>JavaScript Cheatsheet</h2>
+// Variables and Data Types
+var variableName = value;<br>
+let anotherVariable = "Hello";<br>
+const constantVariable = 42;<br>
 
+// Data Types
+let numberVar = 10;<br>
+let stringVar = "Hello, World!";<br>
+let booleanVar = true;<br>
+let arrayVar = [1, 2, 3];<br>
+let objectVar = { key: "value" };<br>
 
+// Operators
+let sum = 2 + 3;<br>
+let difference = 5 - 2;<br>
+let product = 4 * 6;<br>
+let quotient = 8 / 2;<br>
+let remainder = 9 % 2;<br>
 
+// Control Flow
+if (condition) {<br>
+    // code to execute if the condition is true<br>
+} else {<br>
+    // code to execute if the condition is false<br>
+}<br>
 
-    <section>
-      <h2>Tools and resources</h2>
-      <a href="html.html">HTML Cheatsheet</a>
-      <a href="css.html">CSS Cheatsheet</a>
-      <a href="Java.html">JavaScript Cheatsheet</a>
-      <a href="Python.html">Python Cheatsheet</a>
-    </section>
+for (let i = 0; i < 5; i++) {<br>
+    // code to repeat<br>
+}<br>
+
+while (condition) {<br>
+    // code to repeat while the condition is true<br>
+}<br>
+
+// Functions
+function functionName(parameter1, parameter2) {<br>
+    // code to be executed<br>
+    return result; // optional<br>
+}<br>
+
+const multiply = function(a, b) {<br>
+    return a * b;<br>
+};<br>
+
+const add = (a, b) => a + b;<br>
+
+// Arrays and Objects
+let fruits = ['apple', 'orange', 'banana'];<br>
+fruits.push('grape'); // Add an element to the end<br>
+fruits.pop(); // Remove the last element<br>
+
+let person = {<br>
+    name: 'John',<br>
+    age: 30,<br>
+    isStudent: false<br>
+};<br>
+console.log(person.name); // Access property<br>
+
+// DOM Manipulation (Browser)
+let elementById = document.getElementById('idName');<br>
+let elementsByClass = document.getElementsByClassName('className');<br>
+let elementsByTag = document.getElementsByTagName('tagName');<br>
+let elementBySelector = document.querySelector('selector');<br>
+let elementsBySelectorAll = document.querySelectorAll('selector');<br>
+
+element.innerHTML = 'New content';<br>
+element.style.color = 'red';<br>
+element.classList.add('newClass');<br>
+element.addEventListener('click', function() {<br>
+    // code to run on click<br>
+});<br>
+
+// Asynchronous JavaScript (Promises)
+const fetchData = () => {<br>
+    return new Promise((resolve, reject) => {<br>
+        // async operation<br>
+        if (/* operation successful */) {<br>
+            resolve(data);<br>
+        } else {<br>
+            reject(error);<br>
+        }<br>
+    });<br>
+};<br>
+
+fetchData()<br>
+    .then(data => console.log(data))<br>
+    .catch(error => console.error(error));<br>
+</div>
    </main>
     
     <!-- Rest of your webpage content goes here -->
