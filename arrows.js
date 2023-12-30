@@ -3,6 +3,7 @@
     var imageDir = 'assets/images/';
     var currentIndex = 0;
 
+    
     var images = [
         'webdev.jpg',
         'ecommerce.jpg',
@@ -27,6 +28,8 @@
         var nextIndex = (currentIndex + 1) % len;
 
         // Set the source and text for each image
+
+
         document.getElementById('rotator-prev').src = imageDir + images[prevIndex];
         document.getElementById('rotator').src = imageDir + images[currentIndex];
         document.getElementById('rotator-next').src = imageDir + images[nextIndex];
